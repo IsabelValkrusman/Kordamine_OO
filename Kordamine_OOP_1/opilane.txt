@@ -1,3 +1,3 @@
-,0,mees,
-,0,mees,
-,0,mees,
+Liis,2003,naine,
+Sasha,2000,mees,
+Andra,1998,naine,

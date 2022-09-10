@@ -30,10 +30,8 @@ namespace Kordamine_OOP_1
         }
 
 
-        public void printinfo()
-        {
-            Console.WriteLine("{0,-10} {1} {2,4}", nimi, synniAasta, sugu);
-        }
+
+        public abstract void printinfo();
 
         public int arvutaVanus()
         {

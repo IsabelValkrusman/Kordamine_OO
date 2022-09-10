@@ -56,9 +56,9 @@ using System.Security.Cryptography.X509Certificates;
 Tootaja Natasha = new Tootaja("Liis", 2003, Isik.Sugu.naine, "koolis", "fotograf", 200, 5.4);
 Natasha.printinfo();
 Tootaja Sergei = new Tootaja("Sasha", 2000, Isik.Sugu.mees, "kodus", "arvutimeister", 2000, 20.5);
-Natasha.printinfo();
+Sergei.printinfo();
 Tootaja Olesya = new Tootaja("Andra", 1998, Isik.Sugu.naine, "tehnikum", "kokk", 500, 6.2);
-Natasha.printinfo();
+Olesya.printinfo();
 
 
 List<Isik> kylastajad = new List<Isik>();
@@ -66,10 +66,10 @@ kylastajad.Add(Natasha);
 kylastajad.Add(Sergei);
 kylastajad.Add(Olesya);
 
-foreach (Isik s in kylastajad)
-{
-    Console.WriteLine(s.sugu);
-}
+//foreach (Isik s in kylastajad)
+//{
+//    Console.WriteLine(s.sugu);
+//}
 
 
 
@@ -79,7 +79,7 @@ foreach (Isik a in kylastajad)
     a.printinfo();
     double sissetulek = a.arvutaSissetulek(500, 20);
     Console.WriteLine("Reaalne sissetulek on: {0,7:f2}", sissetulek);
-    sw.WriteLine(a.nimi + "," + a.synniAasta + ","+ a.sugu + "," );
+    sw.WriteLine(a.nimi + "," + a.synniAasta + "," + a.sugu + ",");
 }
 sw.Close();
 List<Isik> LoetudFailist = new List<Isik>();
@@ -100,7 +100,7 @@ while ((text = p.ReadLine()) != null)
 p.Close();
 foreach(var tootaja in tootajad)
 {
-    Console.WriteLine(tootaja.nimi + "" + tootaja.synniAasta+""+ tootaja.sugu+""+ tootaja.asutus+""+tootaja.amet+""+ tootaja.tootasu+""+ tootaja.tunnitasu);
+    //Console.WriteLine(tootaja.nimi + "" + tootaja.synniAasta+""+ tootaja.sugu+""+ tootaja.asutus+""+tootaja.amet+""+ tootaja.tootasu+""+ tootaja.tunnitasu);
 }
 Console.ReadLine();
 

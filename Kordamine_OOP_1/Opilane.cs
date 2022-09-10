@@ -26,6 +26,11 @@ namespace Kordamine_OOP_1
             hinded = new Dictionary<string, List<int>>();
         }
 
+        public override void printinfo()
+        {
+            Console.WriteLine("{0} {1} {2} {3} {4} {5} {6}", nimi, synniAasta, sugu, koolinimi, klass, spetsialiseerumine, taskuraha);
+        }
+
 
         public Opilane(string koolinimi, int klass, string spetsialiseerumine, double taskuraha, List<string> haridus/*, double eritoetus*/)
         {

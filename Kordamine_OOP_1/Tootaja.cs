@@ -29,8 +29,15 @@ namespace Kordamine_OOP_1
             this.amet = amet;
             this.tootasu = tootasu;
             this.tunnitasu = tunnitasu;
+            this.sugu = sugu;
+            this.nimi = nimi;
+            this.synniAasta = synniAasta;
         }
-        
+
+        public override void printinfo()
+        {
+            Console.WriteLine("{0} {1} {2} {3} {4} {5} {6}", nimi, synniAasta, sugu, asutus, amet, tootasu,tunnitasu);
+        }
 
         public override double arvutaSissetulek(double maksuvaba, double tulumaks)
         {

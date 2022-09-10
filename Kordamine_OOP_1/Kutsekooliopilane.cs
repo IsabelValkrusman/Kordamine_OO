@@ -13,8 +13,12 @@ namespace Kordamine_OOP_1
         public int kursus;
         public double toetus;
         public List<string> nadalatunnid;
-       
 
+
+        public override void printinfo()
+        {
+            Console.WriteLine("{0} {1} {2} {3} {4} {5} {6} {7}", nimi, synniAasta, sugu, oppeasutus, eriala, kursus, toetus, nadalatunnid);
+        }
 
 
         public Kutsekooliopilane()
